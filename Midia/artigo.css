@@ -1,0 +1,41 @@
+.secao-esportes {
+    padding: 1px;
+    color: rgb(29, 206, 29);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.esportes {
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    color:  rgb(29, 206, 29);
+    text-align: left;
+    text-decoration: underline black;
+    font-size: xx-large;
+}
+
+.titulo{
+    text-align: center;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    font-style: italic;
+    
+}
+.secao-economia{
+
+    
+    color: rgb(203, 206, 29);
+    padding: 1px;
+}
+
+.secao-gastronomia{
+    padding: 1px;
+    color: darkred
+}
+
+.menu{
+    
+    text-align: left;
+}
