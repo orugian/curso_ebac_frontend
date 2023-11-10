@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pratique.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário</h1>
+    <h2>Validação numérica</h2>
+    <form id="form-nmb">
+
+      <input type="number" id="nmb-a" required placeholder="Número A"></input>
+      <input type="number" id="nmb-b" required placeholder="Número B"></input>
+      <button type="submit">Enviar</button>
+      <button class="reset-btn" type="reset" onclick="limpaTela()">Resetar</button>
+      <p class="igualdade-message">Espertinho!!! Os números são iguais></p>
+      <p class="error-message">Que pena!!! O número <b>a</b>é maior que o número <b>b</b></p>
+      <p class="success-message">Muito bem!!! O número <b>b</b>é maior que o número <b>a</b></p>
+      
+    </form>
+  </div>
+  <script src="./pratique.js"></script>
+</body>
+</html>
