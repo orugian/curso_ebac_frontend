@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 16px 0;
+}
+
+.form-lista{
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.form-lista input,button{
+  border: 1px solid rgba(0, 0, 0, 0.466);
+  margin: 2px;
+}
+
+input{
+  padding-right: 10px;
+}
+
+
+.lista{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+#meuLink{
+  text-decoration: none;
+}
+
+.clicked{
+  text-decoration: line-through;
+}

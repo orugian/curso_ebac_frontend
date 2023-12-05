@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilização ao Clicar com jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    /* Estilo padrão para o link */
+    a {
+      text-decoration: none; /* Remover sublinhado padrão */
+    }
+
+    /* Estilo para o link clicado */
+    .clicked {
+      text-decoration: line-through; /* Adicionar linha no texto */
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#" id="meuLink">Clique em mim</a>
+
+  <script>
+    // Função para aplicar estilos quando o link é clicado
+    function aplicarEstilo() {
+      // Adiciona a classe "clicked" ao link usando jQuery
+      $(this).addClass('clicked');
+
+      // Desvincula o manipulador de eventos após o clique (opcional)
+      $(this).off('click', aplicarEstilo);
+    }
+
+    // Adiciona um manipulador de eventos para o clique no link usando jQuery
+    $('#meuLink').on('click', aplicarEstilo);
+  </script>
+</body>
+</html>
