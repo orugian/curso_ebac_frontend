@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     e.preventDefault();
     const tarefa = $('form input').val();
-    const novaTarefa =  $('li');          //$('<li></li>'); // Prblema pode estar aqui!!!!!!
+    const novaTarefa =  $('<li style="display: none;"></li>');          //$('<li></li>'); // Prblema pode estar aqui!!!!!!
     
     $(`
     <div class="lista">
@@ -18,9 +18,8 @@ $(document).ready(function () {
     $('#tarefa-nova').val(' ');
   })
   
-  $(novaTarefa).click(function(a) {
+  $('ul').on("click", "a", function() {
   
-    a.preventDefault();
-    $(this).addClass('clicked');
+    $(this).toggleClass('clicked');
   })
 })

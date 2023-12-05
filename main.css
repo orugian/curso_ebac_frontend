@@ -31,6 +31,8 @@ input{
 .lista{
   justify-content: center;
   display: flex;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 
