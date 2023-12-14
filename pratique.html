@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Cadastro</title>
+  <link rel="stylesheet" href="pratique.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <h1>Formulário de Cadastro</h1>
+  </header>
+<div class="container">
+  <form id="formulario">
+      <input name="nome" id="nome" type="text" minlength="2" placeholder="Nome Completo" required>
+      <input name="email" id="email" type="email" placeholder="E-mail" required>
+      <input name="number" id="number" type="tel" placeholder="Telefone celular" required>
+      <input name="cpf" id="cpf" type="text" minlength="11" placeholder="CPF" required>
+      <input name="endereco" id="enderco" type="text" placeholder="Endereço Completo" required>
+      <input name="cep" id="cep" type="text" minlength="9" placeholder="CEP" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+    
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/messages_pt_BR.min.js"></script>
+  <script src="./js/pratique.js"></script>
+</body>
+</html>
