@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  padding: 16px 0;
+  background-color: #F40803;
+  color: #DBEC09;
+  font-size: large;  
+}
+
+header h1, section h2{
+  font-weight: normal;
+}
+
+header nav li{
+  display: inline;
+  margin-left: 16px;
+  text-align: right;
+}
+
+header nav li a{
+  color: #DBEC09;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* container no header serve para centralizar o conteudo e distribuição titulo do site na esquerdo e menu na direita */
+.container{
+  max-width: 1024px; /*passando desse tamanho ele fica centralizado na tela*/
+  width: 100%;
+  margin: 0 auto;
+}
+
+header > .container{
+  display: flex;
+  align-items: center; /* centraliza-los na vertical*/
+  justify-content: space-between; /*deixa o espaço entre os termos iguais*/
+}
+
+section .container{
+  display: flex;
+  align-items: flex-start; /*conteúdo começa pelo topo*/
+  justify-content: space-between; 
+}
+
+section{
+  padding: 24px 0;
+  margin-top: 20px;
+}
+
+section h2{
+  margin-bottom: 20px;
+}
+
+section hr{
+  margin-bottom: 40px;
+}
+
+section{
+  color: #000000;
+}
+
+section p{
+  margin-bottom: 8px;
+}
+
+.store-front{
+  margin-right: 32px;
+}
+
+.container img{
+  max-width: 550px;
+  max-height: 550px;
+}
+
+/*---------------------------------------------------------*/
+#sobre-a-loja {
+  max-width: 1024px; /*passando desse tamanho ele fica centralizado na tela*/
+  width: 100%;
+  margin: auto;
+}
+
+#sobre-a-loja h2{
+  margin-top: 40px;
+}
+
+
+.container-flex{
+  display: flex;
+
+}
+
+
+.lista-veiculos li{
+  list-style: none;
+  max-width: 30%; /*diferença esta aqui se precisar ajustar nop dele ta 30%*/
+  margin-bottom: 24px;
+}
+
+.lista-veiculos li img{
+  max-width: 100%;
+}
+
+.lista-veiculos li h3{
+  margin: 16px 0;
+}
+
+.item-central{
+  margin: 0 5%;
+}
+
+button{
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: #F40803;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 17px;
+}
+
+
+.anuncios{
+  margin-top: 20px;
+}
+
+.anuncios h3{
+  text-align: center;
+}
+
+
+#destaque img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/*---------------------------------------------------------------*/
+
+@media screen and (max-width: 768px){
+  
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 24,25%);
+    column-gap: 1%;
+    
+  }
+  section{
+    display: grid;
+    grid-template-columns: repeat(4, 24,25%);
+    column-gap: 1%;
+  }
+
+  #sobre-a-loja p{
+    display: grid;
+    grid-template-columns: repeat(4, 24,25%);
+    column-gap: 1%;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .container{
+    max-width: 90%;
+    font-size: smaller;
+  }
+
+  #sobre-a-loja h2{
+    font-size: 1.3em;
+  }
+
+  *{
+    overflow-x: hidden;
+  }
+
+  .container-flex img{
+    width: 100px;
+    height: 100px;
+    }
+
+  .container-flex h3 {
+    text-align: left;
+  }
+
+  .container-flex p{
+    font-size: 13px;
+  }
+
+  button{
+    font-size: 13px;
+    display: inline;
+    padding: 5px;
+    width: 100px;
+  }
+
+  .anuncios{
+    margin-right: auto;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1023px){
+
+  *{
+    overflow-x: hidden;
+  }
+  .container-flex img{
+  width: 150px;
+  height: 150px;
+  }
+
+  .anuncios{
+    margin-left: 50px;
+    justify-content: space-around;
+  }
+}
