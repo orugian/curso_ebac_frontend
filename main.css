@@ -1,0 +1,21 @@
+
+.ajuste{
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  max-height: 500px;
+  margin-left: 700px;
+}
+
+.col h2{
+  text-align: center;
+  padding: 30px;
+}
+
+button{
+  margin-top: 10px;
+}
+
+#nome{
+  width: 100%;
+}
