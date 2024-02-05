@@ -1,0 +1,1 @@
+const palavra="Olá",palavra2="Gulp";function somar(a,r){return a+r}module.exports=somar;
